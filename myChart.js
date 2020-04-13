@@ -48,15 +48,16 @@ function renderChart(data, labels, countryName) {
 
     // Draw new chart
     currentChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: labels,
             datasets: [{
                 label: 'Population, ' + countryName,
                 data: data,
-                borderColor: 'rgba(75, 192, 192, 1)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                //backgroundColor: 'rgba(256, 0, 0, 0.2)',
+                borderColor: 'rgba(256, 192, 192, 1)',
+                //borderColor: 'rgba(75, 192, 192, 1)',
+                //backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                backgroundColor: 'rgba(256, 0, 0, 0.2)',
             }]
         },
         options: {
